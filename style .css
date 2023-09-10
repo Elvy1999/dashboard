@@ -219,29 +219,30 @@ form.search-bar input[type="text"] {
 }
 
 .user-greeting img {
-  width: 15%;
+  width: 6em;
   border-radius: 50%;
 }
 .greeting-message {
+  padding-top: 10px;
   font-family: "league";
 }
 
 .bottom-right-icons {
-  padding-left: 15px;
   width: 100%;
   grid-column: 2/3;
   grid-row: 2/3;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 10px;
 }
 
 .bottom-right-icons button {
   background-color: #1992d4;
   border-radius: 20px;
-  padding: 10px 15px;
+  padding: 8px 20px;
   color: white;
-  font-size: 1.3em;
+  font-size: 1.5em;
   font-family: "Times New Roman", Times, serif;
 }
 

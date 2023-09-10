@@ -96,24 +96,30 @@ body {
   fill: white;
 }
 
-nav a {
+/* Check this out later not sure what it does */
+.sidebar nav {
+  position: sticky;
+  top: 4em;
+}
+
+.sidebar nav a {
   padding: 3px 10px;
   display: flex;
   gap: 10px;
   align-items: center;
 }
-nav a:hover {
+.sidebar nav a:hover {
   scale: 1.1;
 }
 
-nav span {
+.sidebar nav span {
   padding-top: 4px;
   flex: 2;
   font-size: 1.5vw;
   font-family: "league";
 }
 
-nav a[title="Settings"] {
+.sidebar nav a[title="Settings"] {
   margin-top: 2em;
 }
 
@@ -126,6 +132,117 @@ nav a[title="Settings"] {
   background-color: #ffffff;
   z-index: 1;
   box-shadow: 1px 6px 5px 1px rgba(97, 89, 89, 0.4);
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  padding: 0px 0.5em;
+  align-items: center;
+  justify-items: center;
+}
+
+.header svg {
+  height: 2.2em;
+  width: 2.2em;
+  object-fit: cover;
+  fill: black;
+  filter: drop-shadow(0.1em 0.1em 0.1em rgba(0, 0, 0, 0.5));
+}
+
+.search-section {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  width: 100%;
+}
+
+form.search-bar {
+  display: flex;
+  gap: 0.5em;
+}
+
+form.search-bar input[type="text"] {
+  width: 100%;
+  font-size: 1.5em;
+  background-color: #e2e8f0;
+  border-radius: 20px;
+  border: 1px solid rgb(239, 232, 232);
+  padding: 5px;
+}
+
+.header button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.header button:hover {
+  transform: scale(1.2);
+}
+
+.top-right-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3em;
+
+  padding-top: 0.1em;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.top-right-icons p {
+  font-size: 1.3em;
+  font-family: "league";
+}
+.top-right-icons svg {
+  width: 100%;
+}
+.top-right-icons img {
+  width: 8%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.top-right-icons button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.user-greeting {
+  padding-bottom: 10px;
+  padding-left: 5px;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.user-greeting img {
+  width: 15%;
+  border-radius: 50%;
+}
+.greeting-message {
+  font-family: "league";
+}
+
+.bottom-right-icons {
+  padding-left: 15px;
+  width: 100%;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.bottom-right-icons button {
+  background-color: #1992d4;
+  border-radius: 20px;
+  padding: 10px 15px;
+  color: white;
+  font-size: 1.3em;
+  font-family: "Times New Roman", Times, serif;
 }
 
 /* * * * * * * * *\

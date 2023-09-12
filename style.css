@@ -316,13 +316,33 @@ p {
   margin-left: 10px;
   display: flex;
   gap: 5px;
+  display: flex;
+  align-items: center;
 }
 
+/* You can use aspect ratio to maintain the shape of the picture, while using width percentage to have
+the picture grow or shrink depending on the container size */
 .tweet-card img {
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 25%;
+  aspect-ratio: 1/1;
   object-fit: cover;
+}
+
+.info h4 {
+  font-weight: bold;
+  font-size: clamp(15px, 1vw, 2vw);
+}
+
+.info p {
+  font-size: clamp(8px, 0.8vw, 1vw);
+  color: #857d7d;
+  border: 1px solid rgb(186, 183, 183);
+  border-radius: 10px;
+  padding: 4px 8px;
+  width: fit-content;
+  box-shadow: -1px 1px 5px 4px rgba(89, 82, 82, 0.73);
+  margin-right: 5px;
 }
 
 /* * * * * * * * *\

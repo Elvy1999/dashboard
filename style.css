@@ -7,22 +7,9 @@
   src: url("/fonts/LeagueSpartan-Bold.otf");
 }
 
-:root {
-  /* Default/Light Colors */
-  --accent-color: #fbfbfb;
-  --floor-color: #000000;
-  --special-color: #f9f9f7;
-  --high-color: #fffeff;
-
-  /* Transitions */
-  --base-transition: none;
-  --fast-transition: none;
-}
-
 svg {
   filter: drop-shadow(0.1em 0.1em 0.1em rgba(0, 0, 0, 0.5));
   flex: 0.5;
-  transition: var(--fast-transition);
   fill: white;
 }
 
@@ -31,20 +18,17 @@ a *,
 button,
 button * {
   cursor: pointer;
-  transition: var(--fast-transition);
 }
 
 a:link,
 a:visited {
-  color: var(--accent-color);
+  color: var(--dont-exist);
   text-decoration: none;
-  text-shadow: 0.05em 0.05em 0.1em var(--floor-color);
 }
 
 a:hover,
 a:focus,
 a:active {
-  color: var(--special-color);
   text-decoration: underline;
 }
 
@@ -58,7 +42,7 @@ body {
   background-color: #e2e8f0;
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 5fr 1.2fr;
+  grid-template-columns: 1fr 5fr 1.3fr;
   grid-template-rows: 1fr 4fr 0.5fr;
 }
 
@@ -70,7 +54,7 @@ body {
   z-index: 1;
   position: relative;
   grid-row: 1/3;
-  background-color: #1992d4;
+  background-color: #00090d;
   color: white;
   box-shadow: 5px 4px 5px 1px rgba(97, 89, 89, 0.5);
   grid-row: 1/4;
@@ -87,9 +71,12 @@ body {
 
 .dash-board > p {
   flex: 2;
-  font-size: 1.8vw;
+  font-size: 1.7vw;
   font-family: "league";
   color: white;
+}
+#bat_symbol {
+  width: 25%;
 }
 
 #dash-board-icon {
@@ -130,7 +117,7 @@ body {
 
 .header {
   position: relative;
-  background-color: #ffffff;
+  background-image: url("assets/bats_background.jpg");
   z-index: 1;
   box-shadow: 1px 6px 5px 1px rgba(97, 89, 89, 0.4);
   display: grid;
@@ -292,6 +279,50 @@ p {
 }
 .project:active {
   transform: scale(0.98);
+}
+
+/* * * * * * * * *\
+ *  tweet section   *
+\* * * * * * * * */
+
+.tweet-section {
+  background-color: rgb(250, 247, 247);
+  margin: 5px 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title {
+  margin-top: 10px;
+  color: rgb(6, 0, 0);
+  font-family: "league";
+  text-align: center;
+  border-bottom: 3px solid rgb(5, 1, 1);
+}
+.title h3 {
+  font-size: 3vh;
+}
+
+.tweets-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.tweet-card {
+  margin-left: 10px;
+  display: flex;
+  gap: 5px;
+}
+
+.tweet-card img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
 }
 
 /* * * * * * * * *\

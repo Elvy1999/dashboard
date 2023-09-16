@@ -23,5 +23,5 @@ rockPaperScissors_card.addEventListener("click", () => {
 });
 
 library_card.addEventListener("click", () => {
-  window.open("https://elvy1999.github.io/libraryApp/", "_blank");
+  window.open("https://elvy1999.github.io/Odin_Projects_Repo/libraryApp/", "_blank");
 });

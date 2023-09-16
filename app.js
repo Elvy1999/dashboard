@@ -3,6 +3,7 @@ const landing_page_card = document.getElementById("landing_page");
 const summary_card = document.getElementById("summary");
 const etchASketch_card = document.getElementById("EtchASketch");
 const rockPaperScissors_card = document.getElementById("rockPaperScissors");
+const library_card = document.getElementById("library");
 
 calculator_card.addEventListener("click", () => {
   window.open("https://elvy1999.github.io/calculator/", "_blank");
@@ -19,4 +20,8 @@ etchASketch_card.addEventListener("click", () => {
 
 rockPaperScissors_card.addEventListener("click", () => {
   window.open("https://elvy1999.github.io/RockPaperScissor/", "_blank");
+});
+
+library_card.addEventListener("click", () => {
+  window.open("https://elvy1999.github.io/libraryApp/", "_blank");
 });
